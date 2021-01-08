@@ -19,6 +19,7 @@
 /*******************************************/
 
 body {
+     /*BK- don't use % for font size- px, rem, or em*/
      font-size: 62.5%;
 }
 
@@ -100,7 +101,6 @@ main{
      flex-flow: column;
      align-items: center;
      justify-content: space-evenly;
-     
 }
 
 .operator-pad >div{
@@ -112,8 +112,6 @@ main{
      align-items: center;
      justify-content: center;
      border-top: 1px solid rgba(99, 99, 99,1);
-     
-     
 }
 
 .operator, .equal-sign>span{
@@ -125,8 +123,3 @@ main{
      flex-grow: 1;
      border-bottom-right-radius: 10%;
 }
-
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
