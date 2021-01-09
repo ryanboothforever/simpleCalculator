@@ -74,7 +74,7 @@ main{
      border-bottom-left-radius: 13%;
 }
 
-.number-pad > div{
+.number-pad > div, .operator-pad >div, #bottom-row>div{
      height: 90px;
      display: flex;
      justify-content: space-evenly;
@@ -89,7 +89,7 @@ main{
 }
 
 #zero{
-     padding: 27px 35px 21px 35px;
+     margin-right: 17px;
      border-right: .1rem solid rgba(99, 99, 99,1);
      border-left: .1rem solid rgba(99, 99, 99,1);
 }
@@ -112,8 +112,6 @@ main{
      align-items: center;
      justify-content: center;
      border-top: 1px solid rgba(99, 99, 99,1);
-     
-     
 }
 
 .operator, .equal-sign>span{
@@ -122,11 +120,20 @@ main{
 }
 .equal-sign{
      flex-basis: 144px;
-     flex-grow: 1;
      border-bottom-right-radius: 10%;
 }
+#bottom-row{
+     padding-right: 3px;
+}
+#bottom-row>div{
+     align-items: baseline;
+}
 
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
+#bottom-row > div:nth-child(3) span:nth-child(1){
+     border: none;
+}
+#clear{
+     border: none;    
+     width: 90px;
+     padding-left: 25px;
+}

@@ -1,6 +1,6 @@
 //When a user clicks on a number, the number appears in the h2
 const numbers = document.getElementsByTagName("span");
-Array.from(numbers).forEach(elements => elements.addEventListener("click", addToDisplay))
+Array.from(numbers).forEach(elements => elements.addEventListener("click", addToDisplay)) 
 
 //When user clicks an operator, the operator appears in the h2
 
@@ -38,6 +38,16 @@ function tallyResult() {
         result = Number(myParts[0]) * Number(myParts[2])
     } else if (myParts[1] === "/") {
         result = Number(myParts[0]) / Number(myParts[2])
-    }   
+    } else{
+        return false
+    }  
     outcome.innerHTML = result
+}
+
+//Clear button clears the display 
+
+document.querySelector("#clear").addEventListener("click", clearDisplay)
+
+function clearDisplay(){
+    document.querySelector("#beep").innerHTML = ""
 }
